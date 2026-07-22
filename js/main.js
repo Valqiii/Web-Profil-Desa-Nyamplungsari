@@ -49,6 +49,9 @@ const GOOGLE_SHEET_CSV_URL = "";
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   loadVillageData();
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
 });
 
 // Mobile Nav Toggle & Smooth Close
