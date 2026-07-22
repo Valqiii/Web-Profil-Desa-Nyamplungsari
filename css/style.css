@@ -505,8 +505,385 @@ a {
     display: block;
   }
 
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
+/* Page Header */
+.page-header {
+  padding: 32px 0 16px 0;
+}
+
+.page-title-card {
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.15), rgba(2, 132, 199, 0.1));
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  text-align: center;
+}
+
+.page-title-card h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 10px 0 6px 0;
+}
+
+.page-title-card p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+/* Profile Sections */
+.profile-section {
+  padding: 16px 0 24px 0;
+}
+
+.content-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background: rgba(13, 148, 136, 0.15);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.accent-icon {
+  background: rgba(245, 158, 11, 0.15);
+  color: var(--accent);
+}
+
+.primary-icon {
+  background: rgba(2, 132, 199, 0.15);
+  color: var(--secondary);
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-main);
+  text-transform: capitalize;
+}
+
+.card-subtitle {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  margin-top: 2px;
+}
+
+/* History */
+.history-body p {
+  color: #d1d5db;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.history-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Visi Misi Grid */
+.vission-mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 24px;
+}
+
+.visi-quote {
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #f3f4f6;
+  line-height: 1.7;
+  padding: 20px;
+  background: rgba(245, 158, 11, 0.06);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.misi-list {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.misi-list li {
+  color: #d1d5db;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.misi-list li strong {
+  color: var(--primary-light);
+}
+
+/* Geografis & Batas Wilayah */
+.geo-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.map-wrapper {
+  min-height: 320px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+}
+
+.boundaries-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.boundaries-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.boundary-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 16px;
+  border-top-width: 3px;
+  transition: var(--transition);
+}
+
+.boundary-card.north { border-top-color: #06b6d4; }
+.boundary-card.east { border-top-color: #10b981; }
+.boundary-card.south { border-top-color: #f59e0b; }
+.boundary-card.west { border-top-color: #8b5cf6; }
+
+.boundary-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-2px);
+}
+
+.b-dir {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.b-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Demographics Stat Cards */
+.demographics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.demo-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 24px 16px;
+  text-align: center;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  background: rgba(13, 148, 136, 0.08);
+}
+
+.demo-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.dusun-icon { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+.rw-icon { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
+.rt-icon { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+
+.demo-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.demo-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* Organizational Structure Chart */
+.org-chart-wrapper {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.org-level {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.org-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 14px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 180px;
+  transition: var(--transition);
+}
+
+.org-box:hover {
+  border-color: var(--primary);
+  background: rgba(13, 148, 136, 0.1);
+  transform: translateY(-2px);
+}
+
+.bpd-box {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.kades-box {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  min-width: 220px;
+}
+
+.sekdes-box {
+  border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+  min-width: 200px;
+}
+
+.staff-box {
+  border-color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.08);
+}
+
+.kadus-box {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.org-role {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--primary-light);
+}
+
+.org-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.org-line-v {
+  width: 2px;
+  height: 24px;
+  background: var(--card-border);
+  margin: 6px 0;
+}
+
+.org-group-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin: 12px 0 8px 0;
+  text-transform: uppercase;
+}
+
+.org-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.org-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .vission-mission-grid {
+    grid-template-columns: 1fr;
+  }
+  .geo-layout {
+    grid-template-columns: 1fr;
+  }
+  .org-grid-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .org-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 600px) {
+  .demographics-grid {
+    grid-template-columns: 1fr;
+  }
+  .org-grid-6, .org-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
