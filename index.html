@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desa Nyamplungsari - Petarukan, Kabupaten Pemalang</title>
+  <meta name="description" content="Website Resmi Profil Desa Nyamplungsari, Kecamatan Petarukan, Kabupaten Pemalang, Jawa Tengah (52362). Informasi Wisata Pantai Joko Tingkir, Sumur Pandan, Potensi & UMKM Desa.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo-group">
+        <div class="logo-badge">N</div>
+        <div class="logo-text">
+          <h1>Logo Desa Nyamplungsari</h1>
+          <span>Petarukan, Pemalang</span>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu Mobile">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active">Beranda</a>
+        <a href="#profil" class="nav-link">Profil Desa</a>
+        <a href="#potensi" class="nav-link">Potensi</a>
+        <a href="#wisata" class="nav-link">Wisata</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (Persis Wireframe) -->
+  <section class="hero-section" id="beranda">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/hero.png" alt="Hero Image Foto Pantai Desa Nyamplungsari">
+          <div class="hero-overlay">
+            <div class="hero-text">
+              <span class="hero-badge">Desa Pesisir & Potensi Bahari</span>
+              <h2>Selamat datang di Desa Nyamplungsari</h2>
+              <p>Kecamatan Petarukan, Kabupaten Pemalang</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Category Links (Pertanian, Perikanan, Wisata) -->
+  <section class="quick-categories" id="potensi">
+    <div class="container">
+      <div class="categories-grid">
+        
+        <a href="#pertanian" class="category-card">
+          <div class="category-icon">
+            <i data-lucide="sprout"></i>
+          </div>
+          <h3>Pertanian</h3>
+        </a>
+
+        <a href="#perikanan" class="category-card">
+          <div class="category-icon">
+            <i data-lucide="fish"></i>
+          </div>
+          <h3>Perikanan</h3>
+        </a>
+
+        <a href="#wisata" class="category-card">
+          <div class="category-icon">
+            <i data-lucide="palmtree"></i>
+          </div>
+          <h3>Wisata</h3>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Wisata Unggulan Section -->
+  <section class="wisata-section" id="wisata">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Wisata unggulan</h2>
+          <p class="section-subtitle">Destinasi wisata favorit Pantai Joko Tingkir & Pantai Sumur Pandan</p>
+        </div>
+      </div>
+
+      <div class="wisata-grid" id="wisata-container">
+        <!-- Default Wisata Item 1: Pantai Joko Tingkir -->
+        <div class="wisata-card">
+          <div class="wisata-img-wrapper">
+            <img src="assets/images/joko-tingkir.png" alt="Pantai Joko Tingkir">
+          </div>
+          <div class="wisata-content">
+            <h3>Pantai Joko Tingkir</h3>
+            <p>Wisata pesisir favorit di Nyamplungsari dengan pemandangan laut yang indah, fasilitas gazebo santai, serta spot bersantai bersama keluarga.</p>
+          </div>
+        </div>
+
+        <!-- Default Wisata Item 2: Pantai Sumur Pandan -->
+        <div class="wisata-card">
+          <div class="wisata-img-wrapper">
+            <img src="assets/images/sumur-pandan.png" alt="Pantai Sumur Pandan">
+          </div>
+          <div class="wisata-content">
+            <h3>Pantai Sumur Pandan</h3>
+            <p>Pantai yang asri dan tenang dengan pepohonan pesisir rindang, tempat terbaik untuk melihat matahari terbit dan menikmati angin laut segar.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UMKM Desa Section -->
+  <section class="umkm-section" id="umkm">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">UMKM desa</h2>
+      </div>
+
+      <div class="umkm-card">
+        <div class="umkm-img-wrapper">
+          <img src="assets/images/umkm.png" alt="Produk Olahan UMKM Desa Nyamplungsari">
+        </div>
+        <div class="umkm-info">
+          <h3>Galeri singkat produk olahan</h3>
+          <p>Produk olahan khas buatan warga lokal Desa Nyamplungsari berbasis hasil laut dan pertanian berkualitas tinggi:</p>
+          <div class="umkm-tags">
+            <span class="tag-badge"><i data-lucide="package"></i> Terasi Udang</span>
+            <span class="tag-badge"><i data-lucide="package"></i> Kerupuk Ikan & Udang</span>
+            <span class="tag-badge"><i data-lucide="package"></i> Ikan Asin Pesisir</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><i data-lucide="map-pin" style="width: 18px; height: 18px; color: var(--primary);"></i> <strong>Kontak:</strong> Kantor Desa Nyamplungsari, Kec. Petarukan, Kab. Pemalang, Jawa Tengah 52362</p>
+        </div>
+        <div class="footer-right">
+          <p>&copy; Desa Nyamplungsari | Program KKN</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
