@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loadVillageData();
 });
 
-// Mobile Nav Toggle
+// Mobile Nav Toggle & Smooth Close
 function initMobileNav() {
   const toggleBtn = document.getElementById("mobile-toggle");
   const navMenu = document.getElementById("nav-menu");
@@ -59,6 +59,14 @@ function initMobileNav() {
   if (toggleBtn && navMenu) {
     toggleBtn.addEventListener("click", () => {
       navMenu.classList.toggle("show");
+    });
+
+    // Close mobile menu when a nav link is clicked
+    const navLinks = navMenu.querySelectorAll(".nav-link");
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+      });
     });
   }
 }
