@@ -13,12 +13,26 @@ Dokumen ini berisi panduan untuk tim KKN dan Perangkat Desa Nyamplungsari dalam 
 4. **Drag & Drop** (Tarik dan Lepas) seluruh folder proyek tersebut ke area upload Netlify.
 5. Dalam 5 detik, website langsung aktif dan mendapat link URL gratis seperti `https://desa-nyamplungsari.netlify.app`.
 
-### B. Menggunakan GitHub Pages
-1. Buat akun di [github.com](https://github.com/).
-2. Buat repository baru dengan nama `web-desa-nyamplungsari`.
-3. Upload seluruh file ke repository tersebut.
-4. Buka **Settings** > **Pages** > Pada bagian **Source**, pilih branch `main` dan klik **Save**.
-5. Website akan otomatis online di `https://username.github.io/web-desa-nyamplungsari/`.
+### B. Menggunakan GitHub Pages (Langsung dari Repository Anda)
+Repository GitHub Anda sudah dikonfigurasi ke: `https://github.com/Valqiii/Web-Profil-Desa-Nyamplungsari`
+
+**Langkah Push Kode dari Komputer:**
+Jalankan perintah berikut di terminal (PowerShell / Command Prompt):
+```bash
+git branch -M main
+git push -u origin main
+```
+
+**Langkah Mempublikasikan (Hosting Gratis):**
+1. Buka halaman repository Anda: [github.com/Valqiii/Web-Profil-Desa-Nyamplungsari](https://github.com/Valqiii/Web-Profil-Desa-Nyamplungsari)
+2. Klik menu **Settings** (di bagian kanan atas halaman repository).
+3. Di menu sebelah kiri, pilih **Pages** (pada bagian *Code and automation*).
+4. Di bagian **Build and deployment** > **Branch**:
+   - Pilih `main`
+   - Folder tetap `/ (root)`
+   - Klik **Save**.
+5. Dalam 1-2 menit, website Anda akan otomatis online dan dapat diakses di:
+   👉 **`https://valqiii.github.io/Web-Profil-Desa-Nyamplungsari/`**
 
 ---
 
